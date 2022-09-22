@@ -1,0 +1,119 @@
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .nav{
+        position: relative;
+        flex: 1;
+        text-align: right;
+        color:#282938;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .nav img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0.4rem 7rem;
+    }
+    .nav-container{
+        margin-right: 5.5rem;
+    }
+    .nav ul{
+        display: flex;
+        float: right;
+        margin-right: 20px;
+
+    }
+    .nav ul li {
+        list-style: none;
+        margin: 0 30px;
+        color: #282938;
+    }
+    .nav ul li a{
+        color: #282938;
+        font-family: 'New times roman';
+        font-size: 22px;
+        font-weight:normal;
+        padding: 8px 0;
+        display: block;
+    }
+    .nav ul li a::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #E62872;
+        transition: width .4s;
+        visibility: hidden;
+    }
+    .nav ul li a:hover::after{
+        width: 100%;
+        visibility: visible;
+    }
+    .btn{
+        display: inline-block;
+        /* width: 10rem; */
+        border-radius: 10px;
+        background-color: #E62872 ;
+        border-color: #E62872;
+        color: rgb(248, 248, 248);
+        font-size: 22px;
+        font-weight: normal;
+        /* margin-left: 40px; */
+        padding: 1px 10px;
+        cursor: pointer;
+    }
+    .btn a{
+        color: #ffffff;
+    }
+    .Contact{
+        background-color:#1C1E53;
+        color: #ffffff;
+        height: 4rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+
+    .footer{
+        background-color:#F0FBFF;
+        display: flex;
+    }
+    .footer1 ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 0 38rem;
+        padding-top: 1rem;
+        width: 150px;
+        position: relative;
+    }
+
+    .back .btn4{
+        margin-left: 27.2rem;
+        margin-top: 0.9rem;
+        color: rgb(252, 252, 252);
+        font-weight: normal;
+        border-radius: 10px;
+        border-style: none;
+        display: block;
+        float: right;
+        cursor: pointer;
+    }
+    .footer2 ul {
+        display: flex;
+        justify-content: space-between;
+        width: 235%;
+        padding-top: 1.5rem;
+    }
