@@ -1,4 +1,4 @@
-function myfunction() {
+function myfunction2() {
   alert("You are going to download the Resume!");
 }
 
@@ -6,6 +6,7 @@ function myfunction() {
 function Certificates(){
   alert("You are going to be redirected to the original certificate!");
 }
+
 
 
 
