@@ -24,9 +24,9 @@
         margin-top: 2rem;
         margin-bottom: 1rem;
     }
-    .certificates img:hover{
+    /* .certificates img:hover{ */
         /* -webkit-filter: blur(2px); */
-    } 
+    /* }  */
 
     .see{
         margin: 1rem 0 1rem 0;
