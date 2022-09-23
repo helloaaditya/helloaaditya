@@ -39,7 +39,7 @@
         height: 3rem;
         border-radius: 10px;
         border: 1px solid #E62872;
-        padding: 0 2rem;
+        padding: 0 1.9rem;
         margin-bottom: 1rem;
     }
     form textarea{
@@ -69,6 +69,9 @@
         }
         form textarea{
             width: 100%;
+        }
+        form button{
+            width: 25%;
         }
     }
         
