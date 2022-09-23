@@ -12,29 +12,35 @@
 
     .All-Certificates{
         position: relative;
-        background-color: #F5F5F5;
+        background-color:  #F0FBFF;
         display: flex;
         justify-content:space-between;
         align-items: center;
         padding: 1rem 6rem 0 ;
         flex-wrap: wrap;
     }
-  
-    .certificates img:hover{
-        -webkit-filter: blur(2px);
-    } 
-    .see{  
-        background-color: #F5F5F5;
-        align-items: center;
-        justify-content: center;
-        display: flex;
+    .All-Certificates .see{
+        margin-left: 33rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
-      .btn { 
-        margin-top:1.5rem;
-        background-color: #e610c9;
-        border: 1px solid #000;
+    .certificates img:hover{
+        /* -webkit-filter: blur(2px); */
+    } 
+
+    .see{
+        margin: 1rem 0 1rem 0;
+        display: flex;
+        justify-content: center;
+
+    }
+    .btn{
+        display: block;
+        background-color: #f104b6;
         padding: 0.5rem 1rem;
         border-radius: 5px;
-   
-        
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: rgb(253, 253, 253);
+        cursor: pointer;
     }
