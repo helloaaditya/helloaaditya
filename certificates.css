@@ -21,7 +21,7 @@
 
     .All-Certificates > div {
         display: block;
-        background-color: rgba(217, 239, 243, 0.8);
+        background-color: rgba(235, 249, 252, 0.8);
         border: 1px solid black;
         text-align: center;
         font-size: 15px;
@@ -35,15 +35,6 @@
         color: blue;
       }
       
-    
-    /* .All-Certificates .see{
-        margin-left: 33rem;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-    } */
-    /* .certificates img:hover{ */
-        /* -webkit-filter: blur(2px); */
-    /* }  */
 
     .see{
         margin: 1rem 0 1rem 0;
@@ -61,6 +52,7 @@
         color: rgb(253, 253, 253);
         cursor: pointer;
     }
+    
     @media screen and (max-width: 768px){
         .All-Certificates{
             display: block;
