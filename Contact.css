@@ -18,39 +18,40 @@
         text-align: center;
         padding: 1rem;
     }
-    .form{
+    form{
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 3rem;
+        padding: 0rem;
         background-color:#F0FBFF;
         margin-bottom: 1rem;
 
     }
-    .form h1{
+    form h1{
         font-size: 2.5rem;
         font-weight: 500;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
     }
-    .form input{
-        width: 30rem;
+    form input{
+        width: 150%;
         height: 3rem;
         border-radius: 10px;
         border: 1px solid #E62872;
-        padding: 0 1rem;
+        padding: 0 2rem;
         margin-bottom: 1rem;
     }
-    .form textarea{
-        width: 30rem;
+    form textarea{
+        width: 150%;
         height: 10rem;
         border-radius: 10px;
         border: 1px solid #E62872;
         padding: 1rem 1rem;
-        margin: 0.5rem 2.9rem;
+        margin: 0rem 0rem;
     }
-    .form button{
-        width: 10rem;
+    form button{
+        width: 20%;
         height: 3rem;
         border-radius: 10px;
         background-color: #E62872;
@@ -64,11 +65,11 @@
     }
     @media screen and (max-width: 768px){
         .form input{
-            width: 20rem;
+            /* width: 20rem; */
         }
         .form textarea{
-            width: 20rem;
-        }
+            /* width: 20rem;
+        } */
     }
         
 
