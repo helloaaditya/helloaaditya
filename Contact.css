@@ -64,10 +64,10 @@
         cursor: pointer;
     }
     @media screen and (max-width: 768px){
-        .form input{
+        form input{
             width: 100%;
         }
-        .form textarea{
+        form textarea{
             width: 100%;
         }
     }
