@@ -7,25 +7,37 @@
         <title>Certificates | Portfoloi</title>
         <link rel="icon" type="image/x-icon" href="Images/icon.png">
         <link rel="stylesheet" href="certificates.css">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="js/my.js"></script>
         <script src="main.js"></script>
     </head>
     <body>
-        <section>
-            <div class="header">
-                <div class="nav"> 
-                
-                <div class="logo"><a href="main.html"><img src="Images/icon.png" alt="logo"></a></div>
+        <section class="navigation">
             <div class="nav-container">
-                <ul>
-                    <li><a href="main.html">Home</a></li>
-                    <button class="btn"><a href="Certificates.html">Certificates</a></button>
-                    <li><a href="About.html">About me</a></li>
-                    <li><a href="Contact.html">Contact</a></li> 
+              <div class="brand">
+                <a href="#!"><img src="Images/icon.png" alt="logo"></a>
+              </div>
+              <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                  <li>
+                    <a href="index.html">Home</a>
+                  </li>
+                    <li>
+                    <a href="Certificates.html">Certificates</a>
+                  </li>
+                  <li>
+                    <a href="About.html">About-me</a>
+                  </li>
+                
+                  <li>
+                    <a href="Contact.html">Contact</a>
+                  </li>
                 </ul>
+              </nav>
             </div>
-        </div>
-        </section>
-
+          </section>
         <section class="All-Certificates">
             <div class="certificates">
                 <img src="Images/certificates1.png" alt="certificate1" width="350px" height="250px" onclick="Certificates()">
@@ -74,10 +86,14 @@
                 <img src="Images/certificates1.png" alt="certificate1" width="350px" height="250px">
                 <p><span class="name">Effective Problem-Solving and <br>Decision-Making</span><br>
                     University of California, Irvine</p>
-            </div> <section class="see">
-            <button class="btn">See more</button>
+            </div> 
+            
         </section>
-        </section>
+            <div class="see">
+                <div></div>
+                <div><button class="btn">See more</button></div>
+                
+            </div>
         <section class="chat">
             <!--Start of Tawk.to Script-->
     <script type="text/javascript">
@@ -93,28 +109,22 @@
         </script>
         <!--End of Tawk.to Script-->
         </section>
-        <section class="footer">
-            <div class="footer1">
-                    <ul>
-                        <li><a href="https://www.facebook.com/aditya.prajapati.581"><img src="Images/github.png" alt="Github" height="40px" width="40px"></a></li>
-                        <li><a href="https://www.instagram.com/aditya_prajapati_123/"><img src="Images/linkedin.png" alt="Linkedin" height="40px" width="40px"></a></li>
-                        <li><a href="https://www.linkedin.com/in/aditya-kumar-prajapati-4a8b1b1b9/"><img src="Images/twitter.png" alt="Twitter" height="40px" width="40px"></a></li>
-                    </ul>  
-            </div>        
-            <div class="back">
-                <button class="btn4"><a href="#"><img src="Images/up-arrow - Copy.png" alt="Go-up"  height="40px" width="40px"></button>
-            </div> 
-    </section>
-        <section class="footer">
+        <section class="footer">     
+            
+            <footer>
+                <ul>
+                    <li><a href="https://www.facebook.com/aditya.prajapati.581"><img src="Images/github.png" alt="Github" height="40px" width="40px"></a></li>
+                    <li><a href="https://www.instagram.com/aditya_prajapati_123/"><img src="Images/linkedin.png" alt="Linkedin" height="40px" width="40px"></a></li>
+                    <li><a href="https://www.linkedin.com/in/aditya-kumar-prajapati-4a8b1b1b9/"><img src="Images/twitter.png" alt="Twitter" height="40px" width="40px"></a></li>
+                </ul> 
+            </footer>
 
             <div class="footer2">
                 <ul>
-                    <li><a href="https://www.facebook.com/aditya.prajapati.581"><img src="Images/copyright.png" alt="heart" width="15px" height="15px">adityakumarprajapati</a></li>
-                    <li><a href="https://www.instagram.com/aditya_prajapati_123/">Made with by <img src="Images/heart.png" alt="heart" width="15px" height="15px"> ADITYA </a></li>
-                    <li><a href="https://www.linkedin.com/in/aditya-kumar-prajapati-4a8b1b1b9/">Tearms & Conditions</a></li>
+                    <li><a href="https://www.instagram.com/aditya_prajapati_123/"><span id="myname">Made by <img src="Images/heart.png" alt="heart" width="15px" height="15px"> ADITYA </span></a></li>
                 </ul>  
-        </div>  
-        </section> 
+            </div> 
+    </section> 
     
     </body>
     </html>

@@ -7,79 +7,183 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-.nav{
-    position: relative;
-    flex: 1px;
-    text-align: right;
-    color:#282938;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+// Navigation Variables
+$content-width: 1000px;
+$breakpoint: 799px;
+$nav-height: 70px;
+$nav-background:#aae6fc;
+$nav-font-color: black;
+$link-hover-color:  #ee0f8a;
 
+// Outer navigation wrapper
+.navigation {
+  height: $nav-height;
+  background: $nav-background;
 }
-.nav img {
+
+// Logo and branding
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: $nav-height;
+  text-transform: uppercase;
+  font-size: 1.4em;
+
+  img{
     width: 70px;
     height: 70px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0.4rem 7rem;
-}
-
-.nav ul{
-    display: flex;
-    float: right;
-    margin-right: 2px;
-
-}
-.nav ul li {
-    list-style: none;
-    margin: 0 30px;
-    color: #282938;
-}
-.nav ul li a{
-    color: #282938;
-    font-family: 'New times roman';
-    font-size: 22px;
-    font-weight:normal;
-    padding: 8px 0;
-    display: block;
-}
-.nav ul li a::after{
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #E62872;
-    transition: width .3s;
-    visibility: hidden;
-}
-.nav ul li a:hover::after{
-    width: 100%;
-    visibility: visible;
-}
-
-.btn{
-    display: inline-block;
-    /* width: 10rem; */
-    border-radius: 10px;
-    background-color: #E62872 ;
-    border-color: #E62872;
-    color: rgb(252, 252, 252);
-    font-size: 22px;
-    font-weight: normal;
-    margin-left: 11%; 
-    padding: 1px 10px;
-    cursor: pointer;
-}
-
-
+    border-radius: 100%;
     
-
-.btn a{
-    color: #ffffff;
-    margin: 0 3rem;
+  }
+  a,
+  a:visited {
+    color: $nav-font-color;
+    text-decoration: none;
+  }
 }
+
+// Container with no padding for navbar
+.nav-container {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+// Navigation 
+nav {
+  float: right;
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      font-family: 'Times New Roman';
+      font-weight: bold;
+      font-size: 22px;
+      position: relative;
+      a,
+      a:visited {
+        display: block;
+        padding: 0 20px;
+        line-height: $nav-height;
+        background: $nav-background;
+        color: $nav-font-color;
+        text-decoration: none;
+        &:hover {
+          background: $link-hover-color;
+          color: $nav-font-color;
+        }
+        &:not(:only-child):after {
+          padding-left: 4px;
+          content: ' ▾';
+        }
+      } // Dropdown list
+      ul li {
+        min-width: 190px;
+        a {
+          padding: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+// Dropdown list binds to JS toggle event
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+
+// Binds to JS Toggle
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $nav-background;
+  height: $nav-height;
+  width: $nav-height;
+}
+@media only screen and (max-width: 798px) {
+  // Hamburger nav visible on mobile only
+  .nav-mobile {
+    display: block;
+  }
+  nav {
+   width: 100%;
+    padding: $nav-height 0 15px;
+    ul {
+      display: none;
+      li {
+        float: none;
+        a {
+          padding: 15px;
+          line-height: 20px;
+        }
+        ul li a {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: $breakpoint) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  span,
+  span:before,
+  span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: $nav-font-color;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+  }
+  span:before {
+    top: -10px;
+  }
+  span:after {
+    bottom: -10px;
+  }
+  &.active span {
+    background-color: transparent;
+    &:before,
+    &:after {
+      top: 0;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+
+
 .btn2{
     background: #5E3BEE;
     padding: 7px 30px;
@@ -374,18 +478,6 @@ body{
     line-height: 30px;
     color: #282938;
 }
-.footer{
-    background-color:#F0FBFF;
-    display: flex;
-}
-.footer1 ul {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 0 40rem;
-    padding-top: 1rem;
-    width: 150px;
-    position: relative;
-}
 
 .back .btn4{
     margin-left: 27.2rem;
@@ -398,11 +490,43 @@ body{
     float: right;
     cursor: pointer;
 }
-.footer2 ul {
-    display: flex;
-    justify-content: space-between;
+
+.nav-container-2 ul{
+    display: none;
+}
+
+.footer{
+    background-color: #aae6fc;
     width: 100%;
-    padding-top: 1.5rem;
+    
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    margin: 1rem ;
+
+    li{
+        margin: 1rem 1rem;
+    }
+}
+
+
+.footer2{
+    display: flex;
+    justify-content: center;
+
+    ul {
+        a{
+        color: rgb(139, 139, 139);
+        margin: 1rem;
+    }
+    li{
+        margin: 0 0 1rem 0;
+    }
+    }
+    
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -417,11 +541,11 @@ body{
         // z-index: 1;
         position: absolute;
         top: 0;
-        left: 0;
-        width: 100%;
+        right: 0;
+        width: 50%;
         // height: 20vh;
         border-radius: 0 0 0 2rem;
-        margin-left: 50% ;
+        // margin-left: 50% ;
         // padding-top: 2rem;
         text-align: left;
         // transition: all 0.3s ease;
@@ -544,87 +668,7 @@ body{
     .Achivements p{
         margin: 1rem 0 0 2rem;
     }
-    .footer{
-        display: flex;
-        width: 100%;;
-    }
-    .footer1 ul a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 0 0 -60rem;
-       
-    }
-    #foot{
-        display:none
-    }
-    #myname{
-        text-align: center;
-        margin-left: 10rem;
-    }
-    #copy{
-        display: none;
-    }
-    
-    .back .btn4{
-        margin-left: 27.2rem;
-        margin-top: 0.9rem;
-        color: rgb(252, 252, 252);
-        font-weight: normal;
-        border-radius: 10px;
-        border-style: none;
-        display: block;
-        float: right;
-        cursor: pointer;
-    }
-    .footer2 ul {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        padding-top: 1.5rem;
-    }
+
+
 }
 
-
-
-
-// @media screen and (max-width: 768px){
-//     .nav .nav-container{
-//         flex-direction: column;
-//         padding: 0px 4rem;
-//     }
-  
-// }
-// @media screen and (max-width: 768px){
-//     .projects .badge img{
-//         margin: 1rem 3rem 1rem 8rem;
-//         filter: drop-shadow(6px 6px 3px rgba(61, 107, 93, 0.53));
-//     }
-// }
-// @media screen and (max-width: 768px){
-//     .projects{
-//         flex-direction: column;
-//     }
-// }
-
-// @media screen and (min-width: 768px){
-//     .projects .second{
-//         /* margin: 10px 0 0 100px; */
-//         font-weight: 300;
-//         font-size: 18px;
-//         line-height: 24px;
-//         color: #282938;
-//         margin: 2rem 0 0 6rem;
-//     }    
-// }
-
-// @media screen and (max-width: 768px){
-//     .projects .second{
-//         /* margin: 10px 0 0 100px; */
-//         font-weight: 300;
-//         font-size: 18px;
-//         line-height: 24px;
-//         color: #282938;
-//         margin: 2rem 0 0 2rem;
-//     }    
-// }   

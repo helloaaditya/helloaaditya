@@ -8,77 +8,8 @@
     body{
         font-family: 'Poppins', sans-serif;
     }
-    .nav{
-        position: relative;
-        flex: 1;
-        text-align: right;
-        color:#282938;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+   
 
-    }
-    .nav img {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin: 0.4rem 7rem;
-    }
-    .nav-container{
-        margin-right: 5.5rem;
-    }
-    .nav ul{
-        display: flex;
-        float: right;
-        margin-right: 20px;
-
-    }
-    .nav ul li {
-        list-style: none;
-        margin: 0 30px;
-        color: #282938;
-    }
-    .nav ul li a{
-        color: #282938;
-        font-family: 'New times roman';
-        font-size: 22px;
-        font-weight:normal;
-        padding: 8px 0;
-        display: block;
-    }
-    .nav ul li a::after{
-        content: '';
-        display: block;
-        width: 0;
-        height: 2px;
-        background: #E62872;
-        transition: width .4s;
-        visibility: hidden;
-    }
-    .nav ul li a:hover::after{
-        width: 100%;
-        visibility: visible;
-    }
-    .btn{
-        display: inline-block;
-        /* width: 10rem; */
-        border-radius: 10px;
-        background-color: #E62872 ;
-        border-color: #E62872;
-        color: rgb(255, 255, 255);
-        font-size: 22px;
-        font-weight: normal;
-        /* margin-left: 30px; */
-        padding: 1px 10px;
-        cursor: pointer;
-    
-
-    }
-    .btn a{
-        color: #ffffff;
-    }
     .All-Certificates{
         position: relative;
         background-color: #F5F5F5;
@@ -88,45 +19,22 @@
         padding: 1rem 6rem 0 ;
         flex-wrap: wrap;
     }
-    .All-Certificates .see{
-        margin-left: 33rem;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-    }
+  
     .certificates img:hover{
         -webkit-filter: blur(2px);
     } 
-
-    .footer{
-        background-color:#F0FBFF;
+    .see{  
+        background-color: #F5F5F5;
+        align-items: center;
+        justify-content: center;
         display: flex;
     }
-    .footer1 ul {
-        display: flex;
-        justify-content: space-between;
-        margin: 0 0 0 38rem;
-        padding-top: 1rem;
-        width: 150px;
-        position: relative;
-    }
-
-    .back .btn4{
-        margin-left: 27.2rem;
-        margin-top: 0.9rem;
-        color: rgb(252, 252, 252);
-        font-weight: normal;
-        border-radius: 10px;
-        border-style: none;
-        display: block;
-        float: right;
-        cursor: pointer;
-    }
-    .footer2 ul {
-        display: flex;
-        justify-content: space-between;
-        width: 235%;
-        padding-top: 1.5rem;
-    }
-    .name{
-        color:#5E3BEE;
+      .btn { 
+        margin-top:1.5rem;
+        background-color: #e610c9;
+        border: 1px solid #000;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+   
+        
     }
