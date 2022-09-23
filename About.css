@@ -9,4 +9,28 @@
         font-family: 'Poppins', sans-serif;
     }
 
+    .about{
+        background-color: #F0FBFF;
+        border-radius: 2rem;
+        margin: 2rem 10rem 2rem 10rem;; 
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .about .pic{
+        float: left;
+        border-radius: 100%;
+        margin: 3rem 0rem 3rem 5rem;
+
+    }
+
+    .about .about-myself h3{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .about .about-myself{
+        float: right;
+        margin-right: 2rem;
+        margin-top: 2rem;
+    }
     
