@@ -47,13 +47,14 @@
     @media screen and (max-width: 768px){
         .about{
             flex-direction: column;
-            margin: 2rem 2rem 2rem 4rem;
+            margin: 2rem 2rem 2rem 2.5rem;
         }
         .about img{
             margin: 2rem 0rem 0rem 7rem;
         }
         .about .about-myself{
             margin: 2rem 0rem 0rem 0rem;
+            padding-left: 2px;
         }
         .about h3{
             float: right;
