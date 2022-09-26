@@ -1,75 +1,91 @@
-    *{
-        padding: 0px;
-        margin: 0px;
-        box-sizing: border-box;
-        text-decoration: none;
-        list-style: none;
-    }
-    body{
-        font-family: 'Poppins', sans-serif;
-    }
-   
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
 
-    .All-Certificates{
-            display: block;
-            display: grid;
-            grid-template-columns:auto auto auto auto;
-            gap: 10px;
-            background-color: #fcfcfc;
-            padding: 10px;
-          }
 
-    .All-Certificates > div {
-        display: block;
-        background-color: rgba(235, 249, 252, 0.8);
-        border: 1px solid black;
-        text-align: center;
-        font-size: 15px;
-        padding-top: 1rem;
-        font-weight: bold;
-        color:rgb(238, 41, 222);
-      }
+.All-Certificates, .more_certi_container {
+      display: block;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      background-color: #fcfcfc;
+      padding: 10px;
+    }
 
-      .name{
-        font-size: 20px;
-        color: blue;
-      }
-      
+/* .All-Certificates > div { */
+.certificates {
+  display: block;
+  background-color: rgba(235, 249, 252, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 15px;
+  padding-top: 1rem;
+  font-weight: bold;
+  color:rgb(238, 41, 222);
+}
 
-    .see{
-        margin: 1rem 0 1rem 0;
-        display: flex;
-        justify-content: center;
+.name{
+  font-size: 20px;
+  color: blue;
+}
 
+
+.see{
+  margin: 1rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+
+}
+.btn{
+  display: block;
+  background-color: #f104b6;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(253, 253, 253);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+  .All-Certificates, .more_certi_container{
+      /* display: block; */
+      display: grid;
+      grid-template-columns:auto auto;
+      gap: 10px;
+      background-color: #fcfcfc;
+      padding: 10px;
     }
-    .btn{
-        display: block;
-        background-color: #f104b6;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-        font-size: 1.2rem;
-        font-weight: 500;
-        color: rgb(253, 253, 253);
-        cursor: pointer;
+}
+@media screen and (max-width: 500px){
+  .All-Certificates, .more_certi_container{
+      /* display: block; */
+      display: grid;
+      grid-template-columns:auto;
+      gap: 10px;
+      background-color: #fcfcfc;
+      padding: 10px;
     }
-    
-    @media screen and (max-width: 768px){
-        .All-Certificates{
-            display: block;
-            display: grid;
-            grid-template-columns:auto auto;
-            gap: 10px;
-            background-color: #fcfcfc;
-            padding: 10px;
-          }
-    }
-    @media screen and (max-width: 500px){
-        .All-Certificates{
-            display: block;
-            display: grid;
-            grid-template-columns:auto;
-            gap: 10px;
-            background-color: #fcfcfc;
-            padding: 10px;
-          }
-    }
+}
+
+
+
+
+.more_certi_container {
+padding: 0;
+height: 0;
+visibility: hidden;
+opacity: 0;
+transition: all 0.1s ease-in-out;
+}
+.more_certi_container.active {
+height: 100%;
+visibility: visible;
+opacity: 1;
+}

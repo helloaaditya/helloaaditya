@@ -28,7 +28,7 @@
                     <a href="Certificates.html">Certificates</a>
                   </li>
                   <li>
-                    <a href="About.html">About-me</a>
+                    <a href="About.html">About me</a>
                   </li>
                 
                   <li>
@@ -113,15 +113,43 @@
                 <p><span class="name">Node.js</span><br>
                     Skillslash Academy</p>
             </div> 
-            
         </section>
+        <aside class="more_certi_container">
+            <div class="certificates">
+                <a href="https://www.coursera.org/account/accomplishments/verify/G9CWCCXRWGFP?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">
+                <img src="Images/Effictive.png" alt="certificate1" width="250px" height="150px"></a>
+                <p><span class="name">Effective Problem-Solving and <br>Decision-Making</span><br>
+                    University of California, Irvine</p>
+            </div> 
+            <div class="certificates">
+                <a href="https://coursera.org/share/a92814107da95dd3655b6b10edb3a263">
+                <img src="Images/python.png" alt="certificate1" width="250px" height="150px"></a>
+                <p><span class="name">Programming for Everybody <br>(Getting Started with Python)</span><br>
+                    University of Michigan</p>
+            </div> 
+            <div class="certificates">
+                <a href="https://coursera.org/share/3dcbe5dd394b6be854a0ffc7403353d4">
+                <img src="Images/hardware & os.png" alt="certificate1" width="250px" height="150px"></a>
+                <p><span class="name">Introduction to Hardware and Operating Systems</span><br>
+                    IBM Skills Network</p>
+            </div> 
+            <div class="certificates">
+                <a href="https://coursera.org/share/a92814107da95dd3655b6b10edb3a263">
+                <img src="Images/node.js.png" alt="certificate1" width="250px" height="150px"></a>
+                <p><span class="name">Node.js</span><br>
+                    Skillslash Academy</p>
+            </div> 
+        </aside>
+
+
             <div class="see">
-                <div></div>
-                <div><button class="btn">See more</button></div>
-                
+                <button class="btn active" onclick="showMoreCerti()">See More</button>
             </div>
-        <section class="chat">
-            <!--Start of Tawk.to Script-->
+
+
+
+        <!--Start of Tawk.to Script-->
+    <!-- <section class="chat"> 
     <script type="text/javascript">
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
         (function(){
@@ -133,24 +161,40 @@
         s0.parentNode.insertBefore(s1,s0);
         })();
         </script>
+        </section> -->
         <!--End of Tawk.to Script-->
-        </section>
         <section class="footer">     
             
             <footer>
                 <ul>
-                    <li><a href="https://www.facebook.com/aditya.prajapati.581"><img src="Images/github.png" alt="Github" height="40px" width="40px"></a></li>
-                    <li><a href="https://www.instagram.com/aditya_prajapati_123/"><img src="Images/linkedin.png" alt="Linkedin" height="40px" width="40px"></a></li>
-                    <li><a href="https://www.linkedin.com/in/aditya-kumar-prajapati-4a8b1b1b9/"><img src="Images/twitter.png" alt="Twitter" height="40px" width="40px"></a></li>
+                    <li><a href="https://github.com/"><img src="Images/github.png" alt="Github" height="40px" width="40px"></a></li>
+                    <li><a href="https://www.linkedin.com/feed/"><img src="Images/linkedin.png" alt="Linkedin" height="40px" width="40px"></a></li>
+                    <li><a href="https://twitter.com/home"><img src="Images/twitter.png" alt="Twitter" height="40px" width="40px"></a></li>
                 </ul> 
             </footer>
 
             <div class="footer2">
                 <ul>
-                    <li><a href="https://www.instagram.com/aditya_prajapati_123/"><span id="myname">Made by <img src="Images/heart.png" alt="heart" width="15px" height="15px"> ADITYA </span></a></li>
+                    <li><a href="#!"><span id="myname">Made by <img src="Images/heart.png" alt="heart" width="15px" height="15px"> ADITYA </span></a></li>
                 </ul>  
             </div> 
     </section> 
+    <script>
+        const x = document.querySelector(".more_certi_container");
+        const y = document.querySelector(".btn");
+
+        function showMoreCerti() {
+            x.classList.toggle("active");
+            if (y.classList.contains("active")) {
+                y.innerHTML = "See More";
+                if (x.classList.contains("active")) {
+                    y.innerHTML = "See Less";
+                }
+            } else {
+                y.innerHTML = "See Less";
+            }
+        }
+    </script>
     
     </body>
     </html>

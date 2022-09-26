@@ -172,6 +172,7 @@ nav ul li ul li a {
   border-style: none;
   display: block;
   float: right;
+  position: relative;
   margin: 0rem 7.4rem 2rem;
   cursor: pointer;
 }
@@ -180,6 +181,68 @@ nav ul li ul li a {
   color: #ffffff;
 }
 
+/* extra style for button */
+.btn2 {
+  padding: 7px 30px;
+  font-size: 22px;
+  background-color:#5E3BEE;
+  border: none;
+  float: right;
+  margin: 0rem 7.4rem 2rem;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.btn2:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.btn2:active {
+  color: #000
+}
+
+.btn2:active:after {
+  background: transparent;
+}
+
+.btn2:hover:before {
+  opacity: 1;
+}
+
+.btn2:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #5E3BEE;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
 .main {
   background: #F0FBFF;
   width: 100%;
@@ -365,14 +428,20 @@ nav ul li ul li a {
 
 .projects .badge {
   margin: 1rem 3rem 1rem 3rem;
+  transition: transform .3s ease-in-out;
   filter: drop-shadow(6px 6px 3px rgba(61, 107, 93, 0.53));
 }
 
+.projects .badge :hover{
+  transform: scale(1.1); 
+}
 .btn6 {
-  margin-top: 12rem;
+    
+  float: right;
+  margin: 12rem 5rem 1rem 0rem;
+  transition: transform 5s;
   border-radius: 10px;
   border-style: none;
-  float: right;
   cursor: pointer;
 }
 
@@ -481,7 +550,7 @@ nav ul li ul li a {
   color: #282938;
 }
 
-.back .btn4 {
+/* .back .btn4 {
   margin-left: 27.2rem;
   margin-top: 0.9rem;
   color: rgb(252, 252, 252);
@@ -491,11 +560,11 @@ nav ul li ul li a {
   display: block;
   float: right;
   cursor: pointer;
-}
+} */
 
-.nav-container-2 ul {
+/* .nav-container-2 ul {
   display: none;
-}
+} */
 
 .footer {
   background-color: #aae6fc;
