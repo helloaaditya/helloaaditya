@@ -408,7 +408,7 @@ nav ul li ul li a {
   color: #5E3BEE;
 }
 
-.projects h3 {
+.projects .first h3 {
   margin: 10px 0 0 100px;
   color: #ffffff;
   background-color:  #f81d6e;
@@ -416,14 +416,11 @@ nav ul li ul li a {
   height: 30px;
   border-radius: 10px;
   padding: 5px;
-  font-size: 17px;
-  line-height: 25px;
-  color: #ffffff;
+  
 }
 
 .projects p {
   margin: 10px 0 0 100px;
-  font-weight: 300;
   font-size: 18px;
   line-height: 24px;
   color: #282938;
@@ -445,7 +442,12 @@ nav ul li ul li a {
   color: #282938;
   margin: 3rem 0 0 5rem;
 }
-
+.projects .second p{
+  margin: 10px 0 0 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282938;
+}
 .projects .badge {
   margin: 3rem 3rem 1rem 3rem;
   transition: transform .3s ease-in-out;
@@ -638,9 +640,9 @@ footer ul li {
     margin: 1rem 0rem 0 0;
   }
   .btn2 {
-    padding: 10px 8px;
-    justify-content: center;
-    align-items: center;
+    padding: 8px 8px;
+    /* justify-content: center;
+    align-items: center; */
   }
   .social ul {
     display: flex;
