@@ -562,17 +562,16 @@ nav ul li ul li a {
 }
 
 .Achivements h2 {
-  margin: 10px 0 0 100px;
+  display: flex;
   color: #5E3BEE;
   text-decoration: underline;
+  justify-content: center;
   text-align: center;
-  margin: 3rem 0 0rem 30rem;
 }
 
 .Achivements p {
   margin: 10px 0 0 100px;
-  font-weight: 500;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 30px;
   color: #282938;
 }
