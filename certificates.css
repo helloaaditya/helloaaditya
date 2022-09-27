@@ -53,9 +53,9 @@ body{
   cursor: pointer;
 }
 
+
 @media screen and (max-width: 768px){
   .All-Certificates, .more_certi_container{
-      /* display: block; */
       display: grid;
       grid-template-columns:auto auto;
       gap: 10px;
@@ -65,7 +65,6 @@ body{
 }
 @media screen and (max-width: 500px){
   .All-Certificates, .more_certi_container{
-      /* display: block; */
       display: grid;
       grid-template-columns:auto;
       gap: 10px;
@@ -73,8 +72,6 @@ body{
       padding: 10px;
     }
 }
-
-
 
 
 .more_certi_container {
