@@ -94,12 +94,13 @@ nav ul li ul li a {
 }
 
 @media only screen and (max-width: 798px) {
+
   .nav-mobile {
     display: block;
   }
   nav {
     width: 100%;
-    padding: 70px 0 15px;
+    padding: 70px 0 0px;
   }
   nav ul {
     display: none;
@@ -562,6 +563,7 @@ nav ul li ul li a {
 }
 
 .Achivements h2 {
+  margin: 4rem 0 0 25rem;
   display: flex;
   color: #5E3BEE;
   text-decoration: underline;
@@ -604,6 +606,7 @@ footer ul li {
 }
 
 @media screen and (max-width: 768px) {
+
   .main {
     display: flex;
     flex-direction: column;
@@ -616,10 +619,10 @@ footer ul li {
   .photo img {
     justify-content: center;
     align-items: center;
-    margin: 1% 2.5% 1% 8.5%;
+    margin:2rem 0 0 0;
   }
   .main h1 {
-    padding: 7rem 0 2rem 3rem;
+    padding: 4rem 0 2rem 3rem;
     font-size: 35px;
     color: #282938;
   }
@@ -639,7 +642,7 @@ footer ul li {
     margin: 1rem 0rem 0 0;
   }
   .btn2 {
-    margin: 0rem 0.5rem 1rem 0rem;
+    margin: 0rem 2.5rem 1rem 0rem;
   }
   .social ul {
     display: flex;
@@ -697,7 +700,7 @@ footer ul li {
     
   }
   .back .btn6{
-    margin: 1rem 0rem 0 0;
+    margin: 0rem 14.5rem 0rem 0rem;
   }
   .Academic-Profile h2 {
     margin: 1rem 0rem 0 3rem;
@@ -760,9 +763,9 @@ footer ul li {
 
   }
   .Achivements h2 {
-    /* margin: 3rem 0rem 0 6rem;
-    display: flex; */
-    margin: 4rem 5rem 0 4.5rem;
+    margin: 3.5rem 0rem 0 0rem;
+    display: flex;
+    /* margin: 4rem 5rem 0 4.5rem; */
   }
   .Achivements p {
     margin: 1rem 0 0 2rem;
