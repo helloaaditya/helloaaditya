@@ -2,14 +2,13 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  text-decoration: none;
 }
 body{
-  font-family: 'Poppins', sans-serif;
+  font-family:serif;
 }
 
 
-.All-Certificates, .more_certi_container {
+.All-Certificates, .more_certi_container, .more_badges_container{
       display: block;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -18,7 +17,6 @@ body{
       padding: 10px;
     }
 
-/* .All-Certificates > div { */
 .certificates {
   display: block;
   background-color: rgba(235, 249, 252, 0.8);
@@ -26,8 +24,9 @@ body{
   text-align: center;
   font-size: 15px;
   padding-top: 1rem;
+  font-family: serif;
   font-weight: bold;
-  color:rgb(238, 41, 222);
+  color:rgb(235, 5, 223);
 }
 
 .name{
@@ -53,9 +52,18 @@ body{
   cursor: pointer;
 }
 
+h1{
+  text-align: center;
+  font-family: serif;
+  border-style: inset;
+  margin-top: 2rem;
+  color: rgb(6, 142, 184);
+  background-color: aliceblue;
+}
+
 
 @media screen and (max-width: 768px){
-  .All-Certificates, .more_certi_container{
+  .All-Certificates, .more_certi_container, .more_badges_container{
       display: grid;
       grid-template-columns:auto auto;
       gap: 10px;
@@ -64,7 +72,7 @@ body{
     }
 }
 @media screen and (max-width: 500px){
-  .All-Certificates, .more_certi_container{
+  .All-Certificates, .more_certi_container, .more_badges_container{
       display: grid;
       grid-template-columns:auto;
       gap: 10px;
@@ -85,4 +93,26 @@ transition: all 0.1s ease-in-out;
 height: 100%;
 visibility: visible;
 opacity: 1;
+}
+
+/* badges css */
+.more_badges_container{
+padding: 0;
+height: 0;
+visibility: hidden;
+opacity: 0;
+transition: all 0.1s ease-in-out;
+}
+.more_badges_container.active{
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* additional-pictures */
+.additional-pictures{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0 1rem 0;
 }
