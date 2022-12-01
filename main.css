@@ -119,7 +119,7 @@ nav ul li ul li a {
     position: static;
   }
 }
-@media screen and (min-width: 799px) {
+@media screen and (min-width: 798px) {
   .nav-list {
     display: block !important;
   }
