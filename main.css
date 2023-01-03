@@ -14,7 +14,7 @@ body {
 
 .navigation {
   height: 70px;
-  background: #e5eaec;
+  background: #f0fbff;
 }
 
 .brand {
@@ -84,7 +84,7 @@ nav ul li ul li a {
   position: absolute;
   top: 0;
   right: 0;
-  background: #e5eaec;
+  background: #f0fbff;
   height: 70px;
   width: 70px;
 }
@@ -145,7 +145,7 @@ nav ul li ul li a {
   border-radius: 1px;
   height: 5px;
   width: 35px;
-  background: black;
+  background: #a33fd1;
   position: absolute;
   display: block;
   content: "";
@@ -221,9 +221,9 @@ nav ul li ul li a {
   border-radius: 10px;
 }
 
-.btn2:active {
-  color: #000
-}
+ /* .btn2:active {
+   color: #000 
+}   */
 
 .btn2:active:after {
   background: transparent;
@@ -321,30 +321,29 @@ text-fill-color: transparent;
   position: relative;
 }
 
-.career h2 {
-  margin: 10px 0 0 100px;
-  color: #5E3BEE;
+.career h1 {
+  margin: 1.5rem 0 0 6.2rem;
+  color: #a33fd1;
 }
 
 .career p {
-  margin: 10px 0 0 100px;
+  margin: 1.5rem 0 0 6.2rem;
+  font-size: 20px;
   color: #282938;
 }
 .work-profile{
-    background-color:#f0fbff;
-    padding: 20px 0 20px 0;
-    border-radius: 2rem;
+  border-radius: 2rem;
+  background: linear-gradient(90deg, #c8c0c98e 28.48%, rgba(255, 255, 255, 0.74) 100%);    padding: 20px 0 20px 0;
 }
 .work-profile h2 {
-  margin: 10px 0 0 100px;
-  color: #5E3BEE;
+  margin: 1.5rem 0 0 6.2rem;
+  color: #a33fd1;
 
 }
 
 .work-profile h3 {
-  margin: 10px 0 0 100px;
-  color: #ffffff;
-  background-color: #f81d6e;
+  margin: 1.5rem 0 0 6.2rem;
+  color: #000000;
   width: 120px;
   height: 30px;
   border-radius: 10px;
@@ -352,7 +351,7 @@ text-fill-color: transparent;
 }
 
 .intern ul li {
-  margin: 10px 0 0 100px;
+  margin: 10px 0 0 150px;
   font-weight: 500;
   font-size: 19px;
   line-height: 30px;
@@ -365,40 +364,27 @@ text-fill-color: transparent;
   text-decoration: none;
 }
 
-.tool {
-  position: relative;
-  display: inline-block;
-  /* border-bottom: 1px solid black; */
-}
+.intern ul li p {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0  4rem 0 0;
 
-.tool .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: rgb(238, 238, 238);
-  color: rgb(2, 2, 2);
-  text-align: center;
-  border-radius: 6px;
-  padding: 0px 0;
-  width: 120px;
-  top: 90%;
-  left: 50%;
-  margin-left: -60px;
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-}
-
-.tool:hover .tooltiptext {
-  visibility: visible;
 }
 
 .exper ul li {
-  margin: 10px 0 0 100px;
+  margin: 10px 0 0 150px;
   font-weight: 500;
   font-size: 19px;
   line-height: 30px;
   color: #282938;
   list-style: disc;
+}
+.exper ul li p {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0  4rem 0 0;
 }
 
 .SoftwareEngineer {
@@ -407,7 +393,8 @@ text-fill-color: transparent;
 }
 
 .projects {
-  background: #F0FBFF;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.74),#c8c0c98e 28.48% 100%);    padding: 20px 0 20px 0;
+
   width: 100%;
   display: flex;
   padding: 20px 0 20px 0;
@@ -415,15 +402,14 @@ text-fill-color: transparent;
 }
 
 .projects h2 {
-  margin: 20px 0 0 100px;
-  color: #5E3BEE;
+  margin: 1.5rem 0 0 6.2rem;
+  color: #a33fd1;
 }
 
 .projects .first h3 {
-  margin: 10px 0 0 100px;
-  color: #ffffff;
-  background-color:  #f81d6e;
-  width: 60%;
+  margin: 1.5rem 0 0 5.9rem;
+  color: #070707;
+  /* width: 60%; */
   height: 30px;
   border-radius: 10px;
   padding: 5px;
@@ -431,17 +417,19 @@ text-fill-color: transparent;
 }
 
 .projects p {
-  margin: 10px 0 0 100px;
+  margin: 1rem 0 0 6.2rem;
   font-size: 18px;
   line-height: 24px;
-  color: #282938;
+  color: #282938; 
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
 }
 
+
 .projects .second h3 {
-  margin: 10px 0 0.5rem 0px;
-  color: #ffffff;
-  background-color: #f81d6e;
-  width: 80%;
+  margin: 1.5rem 0 0 5.9rem;
+  color: #070707;
   height: 30px;
   border-radius: 10px;
   padding: 5px;
@@ -453,13 +441,13 @@ text-fill-color: transparent;
   color: #282938;
   margin: 3rem 0 0 5rem;
 }
-.projects .second p{
+/* .projects .second p{
   margin: 10px 0 0 0;
   font-size: 18px;
   line-height: 24px;
   color: #282938;
-}
-.projects .badge {
+} */
+/* .projects .badge {
   margin: 3rem 3rem 1rem 3rem;
   transition: transform .3s ease-in-out;
   filter: drop-shadow(6px 6px 3px rgba(61, 107, 93, 0.53));
@@ -474,24 +462,23 @@ text-fill-color: transparent;
   border-radius: 10px;
   border-style: none;
   cursor: pointer;
-}
+} */
 
 .Academic-Profile {
-  background-color: #F0FBFF;
+  background: linear-gradient(90deg, #c8c0c98e 28.48%, rgba(255, 255, 255, 0.74) 100%);    padding: 20px 0 20px 0;
   width: 100%;
   border-radius: 2rem;
   list-style: disc;
   padding: 20px 0 20px 0;
 }
 .Academic-Profile h2 {
-  margin: 10px 0 0 100px;
-  color: #5E3BEE;
+  margin: 1.5rem 0 0 6.2rem;
+  color: #a33fd1;
 }
 
 .Academic-Profile h3 {
-  margin: 10px 0 0 100px;
-  color: #ffffff;
-  background-color:  #f81d6e;
+  margin: 1.5rem 0 0 5.9rem;
+  color: #020202;
   width: 20%;
   height: 30px;
   border-radius: 10px;
@@ -499,7 +486,7 @@ text-fill-color: transparent;
 }
 
 #edu ul li {
-  margin: 10px 0 0 100px;
+  margin: 10px 0 0 150px;
   font-weight: 500;
   font-size: 19px;
   line-height: 30px;
@@ -512,18 +499,19 @@ text-fill-color: transparent;
 }
 
 .Technical-Knowledge {
-  background-color: #F0FBFF;
+  background: linear-gradient(90deg, rgba(195, 162, 221, 0.74),#cdbcd65b 28.48% 100%);    padding: 20px 0 20px 0;
+
   padding: 20px 0 20px 0;
   margin: 0 3rem;
   width: 50%;
   height: 100%;
   border-radius: 2rem;
-  box-shadow: inset 5px 5px 1px rgba(40, 41, 56, 0.25);
+  box-shadow: inset 5px 5px 1px rgba(85, 80, 87, 0.25);
 }
 
 .Technical-Knowledge h2 {
   margin: 10px 0 0 100px;
-  color: #5E3BEE;
+  color: #a33fd1;
 }
 
 .Technical-Knowledge p {
@@ -535,21 +523,23 @@ text-fill-color: transparent;
 }
 
 .Languages {
-  background-color: #F0FBFF;
+  background: linear-gradient(90deg ,#e3e1e45b,rgba(211, 183, 238, 0.74) 28.48% 100%);    padding: 20px 0 20px 0;
+
   padding: 20px 0 20px 0;
   margin: 0 3rem;
   width: 50%;
   height: 100%;
   border-radius: 2rem;
-  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 1px rgba(12, 12, 12, 0.25);
 }
 
 .Languages h2 {
   margin: 10px 0 0 100px;
-  color: #5E3BEE;
+  color: #a33fd1;
 }
 
 .Languages p {
+  line-height: 200%;
   margin: 10px 0 0 100px;
   font-weight: 500;
   font-size: 19px;
@@ -575,14 +565,14 @@ text-fill-color: transparent;
 .Achivements h2 {
   margin: 4rem 0 0 25rem;
   display: flex;
-  color: #5E3BEE;
+  color: #a33fd1;
   text-decoration: underline;
   justify-content: center;
   text-align: center;
 }
 
 .Achivements p {
-  margin: 10px 0 0 100px;
+  margin: 1.5rem 0 0 6.2rem;
   font-size: 18px;
   line-height: 30px;
   color: #282938;
@@ -660,7 +650,7 @@ footer ul li {
   }
   .career h2 {
     margin: 1rem 0rem 0 3rem;
-    color: #5E3BEE;
+    color: #a33fd1;
   }
   .career p {
     margin: 1rem 0 0 3rem;
@@ -672,7 +662,7 @@ footer ul li {
   }
   .work-profile h2 {
     margin: 1rem 0rem 0 3rem;
-    color: #5E3BEE;
+    color: #a33fd1;
   }
   .work-profile h3 {
     margin: 1rem 0rem 0 3rem;
@@ -690,7 +680,7 @@ footer ul li {
   }
   .projects h2 {
     margin: 1rem 0rem 0 3rem;
-    color: #5E3BEE;
+    color: #a33fd1;
     padding-top: 1rem;
   }
   .projects h3 {
@@ -714,7 +704,7 @@ footer ul li {
   }
   .Academic-Profile h2 {
     margin: 1rem 0rem 0 3rem;
-    color: #5E3BEE;
+    color: #a33fd1;
     padding-top: 1rem;
   }
   .Academic-Profile h3 {
@@ -735,7 +725,7 @@ footer ul li {
   }
   .Technical-Knowledge h2 {
     margin: 1rem 0rem 0 3rem;
-    color: #5E3BEE;
+    color: #a33fd1;
     padding-top: 1rem;
   }
   .Technical-Knowledge p {
@@ -756,7 +746,7 @@ footer ul li {
   }
   .Languages h2 {
     margin: 1rem 0 0 3rem;
-    color: #5E3BEE;
+    color: #a33fd1;
     padding-top: 1rem;
   }
   .Languages p {
