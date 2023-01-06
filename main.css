@@ -425,6 +425,9 @@ text-fill-color: transparent;
   border-radius: 10px;
   padding: 15px;
 }
+.projects .second p {
+  padding-bottom: 43px;
+}
 
 
 .projects .second h3 {
@@ -440,29 +443,8 @@ text-fill-color: transparent;
   line-height: 25px;
   color: #282938;
   margin: 3rem 0 0 5rem;
-}
-/* .projects .second p{
-  margin: 10px 0 0 0;
-  font-size: 18px;
-  line-height: 24px;
-  color: #282938;
-} */
-/* .projects .badge {
-  margin: 3rem 3rem 1rem 3rem;
-  transition: transform .3s ease-in-out;
-  filter: drop-shadow(6px 6px 3px rgba(61, 107, 93, 0.53));
-}
 
-.projects .badge :hover{
-  transform: scale(1.1); 
 }
-.btn6 {
-  float: right;
-  margin: 12rem 5rem 1rem 0rem;
-  border-radius: 10px;
-  border-style: none;
-  cursor: pointer;
-} */
 
 .Academic-Profile {
   background: linear-gradient(90deg, #c8c0c98e 28.48%, rgba(255, 255, 255, 0.74) 100%);    padding: 20px 0 20px 0;
@@ -499,7 +481,7 @@ text-fill-color: transparent;
 }
 
 .Technical-Knowledge {
-  background: linear-gradient(90deg, rgba(195, 162, 221, 0.74),#cdbcd65b 28.48% 100%);    padding: 20px 0 20px 0;
+  background: linear-gradient(90deg, rgba(156, 146, 146, 0.2),#e7e7eb5b 28.48% 100%);    padding: 20px 0 20px 0;
 
   padding: 20px 0 20px 0;
   margin: 0 3rem;
@@ -523,7 +505,7 @@ text-fill-color: transparent;
 }
 
 .Languages {
-  background: linear-gradient(90deg ,#e3e1e45b,rgba(211, 183, 238, 0.74) 28.48% 100%);    padding: 20px 0 20px 0;
+  background: linear-gradient(90deg ,#c4c1c55b,rgba(241, 241, 241, 0.993) 28.48% 100%);    padding: 20px 0 20px 0;
 
   padding: 20px 0 20px 0;
   margin: 0 3rem;
@@ -619,7 +601,7 @@ footer ul li {
   .photo img {
     justify-content: center;
     align-items: center;
-    margin:2rem 0 0 0;
+    margin:2rem 0 0 1rem;
   }
   .main h1 {
     padding: 4rem 0 2rem 3rem;
@@ -633,7 +615,7 @@ footer ul li {
     color: #282938;
   }
   .main h4 {
-    padding: 1rem 0 0rem 3rem;
+    padding: 1rem 2rem 0rem 3rem;
     font-size: 20px;
     font-weight: lighter;
     color: #2b2c3b;
@@ -642,18 +624,18 @@ footer ul li {
     margin: 1rem 0rem 0 0;
   }
   .btn2 {
-    margin: 0rem 2.5rem 1rem 0rem;
+    margin: 0rem 2.5rem 1rem 1.2rem;
   }
   .social ul {
     display: flex;
     margin: 1rem 0rem 0 0;
   }
-  .career h2 {
+  .career h1{
     margin: 1rem 0rem 0 3rem;
     color: #a33fd1;
   }
   .career p {
-    margin: 1rem 0 0 3rem;
+    margin: 1rem 2rem 0 3.5rem;
     padding-bottom: 1rem;
     font-weight: 500;
     font-size: 19px;
@@ -666,14 +648,47 @@ footer ul li {
   }
   .work-profile h3 {
     margin: 1rem 0rem 0 3rem;
+    color: #000000;
   }
-  .work-profile p {
-    margin: 1rem 0 0 3rem;
+  .intern ul li {
+    margin: 0  2rem 0 3rem;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 30px;
+    color: #282938;
+    list-style: disc;
+  }
+  
+  .intern ul li p {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+  
+  }
+  /* .work-profile p {
+    margin: 1rem 0 0 0rem;
     padding-bottom: 1rem;
     font-weight: 500;
     font-size: 19px;
     line-height: 30px;
     color: #282938;
+  } */
+
+  .exper ul li {
+    margin: 0  2rem 0 3rem;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 30px;
+    color: #282938;
+    list-style: disc;
+  }
+  .exper ul li p {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0  2rem 0 0rem;
+    width: 100%;
   }
   .projects {
     display: block;
@@ -683,16 +698,32 @@ footer ul li {
     color: #a33fd1;
     padding-top: 1rem;
   }
-  .projects h3 {
-    margin: 1rem 0rem 0 6rem;
-    color: rgb(255, 255, 255);
+  .projects .first h3 {
+    margin: 1rem 0rem 0 3rem;
+    color: rgb(3, 3, 3);
   }
-  .projects .second{
-
-    margin: 3rem 0rem 0 6rem;
+  .projects .second h3{
+    margin: 3rem 0rem 0 -2rem;
     color: #282938;
   }
-  .badge {
+
+  .projects .first p {
+    margin: 1rem 2rem 0 3rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 30px;
+    color: #282938;
+  }
+  .projects .second p {
+    margin: 1rem 2rem 0 -2rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 30px;
+    color: #282938;
+  }
+  /* .badge {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -701,22 +732,29 @@ footer ul li {
   }
   .back .btn6{
     margin: 0rem 14.5rem 0rem 0rem;
-  }
+  } */
   .Academic-Profile h2 {
     margin: 1rem 0rem 0 3rem;
     color: #a33fd1;
     padding-top: 1rem;
   }
   .Academic-Profile h3 {
-    margin: 1rem 0rem 0rem 6rem;
-    width: 60%;
-    height: 30px;
+    margin: 1rem 0rem 0rem 3rem;
+    width: 100%;
+    color: #000000;
+  }
+#edu ul li {
+    margin: 0  2rem 0 3rem;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 30px;
+    color: #0e0e0e;
+    list-style: disc;
   }
   .skills {
     display: block;
   }
   .Technical-Knowledge {
-    background-color: #F0FBFF;
     margin: 0 0 1rem 0;
     height: 100%;
     width: 100%;
@@ -729,7 +767,7 @@ footer ul li {
     padding-top: 1rem;
   }
   .Technical-Knowledge p {
-    margin: 1rem 0 0 3rem;
+    margin: 1rem 2rem 0 3rem;
     padding-bottom: 1rem;
     font-weight: 500;
     font-size: 19px;
@@ -737,7 +775,6 @@ footer ul li {
     color: #282938;
   }
   .Languages {
-    background-color: #F0FBFF;
     margin: 0%;
     width: 100%;
     height: 100%;
@@ -750,7 +787,7 @@ footer ul li {
     padding-top: 1rem;
   }
   .Languages p {
-    margin: 1rem 0 0 3rem;
+    margin: 1rem 2rem 0 3rem;
     padding-bottom: 1rem;
     font-weight: 500;
     font-size: 19px;
@@ -768,7 +805,7 @@ footer ul li {
     /* margin: 4rem 5rem 0 4.5rem; */
   }
   .Achivements p {
-    margin: 1rem 0 0 2rem;
+    margin: 1rem 2rem 0 3rem;
   }
   
 }
