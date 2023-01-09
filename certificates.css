@@ -39,14 +39,14 @@ body{
   justify-content: center;
 
 }
-.btn-active{
+.btn{
   display: block;
   background-color: #5E3BEE;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   font-size: 1.2rem;
   font-weight: 500;
-  color: rgb(253, 253, 253);
+  color: rgb(252, 252, 252);
   cursor: pointer;
 }
 
@@ -58,53 +58,6 @@ h1{
   color: #5E3BEE;
   background-color: rgb(241, 246, 250);
 }
-/* ewkihseryw****************************************************** */
-/* ********************************************************************* */
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-.slideshow-container{
-  padding-left: 10rem;
-}
-
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.2s ease;
-}
-
-.active {
-  background-color: #ffffff;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-/* ********************************************************************* */
-/* ********************************************************************* */
 
 @media screen and (max-width: 768px){
   .All-Certificates, .more_certi_container, .more_badges_container{

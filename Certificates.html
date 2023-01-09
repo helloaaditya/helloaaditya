@@ -156,26 +156,26 @@
     </aside>
 
     <div class="see">
-        <button class="btn-active" onclick="showMoreCerti()">See More</button>
+        <button class="btn active" onclick="showMoreCerti()">See More</button>
     </div>
-    <!-- //script -->
+    <!-- script -->
     <script>
         const x = document.querySelector(".more_certi_container");
-        const y = document.querySelector(".btn-active");
+        const y = document.querySelector(".btn");
 
         function showMoreCerti() {
             x.classList.toggle("active");
             if (y.classList.contains("active")) {
                 y.innerHTML = "See More";
                 if (x.classList.contains("active")) {
-                    y.innerHTML = "See Less";
+                    y.innerHTML = "See less";
                 }
             } else {
-                y.innerHTML = "See Less";
+                y.innerHTML = "See less";
             }
         }
     </script>
-    <!-- //script end... -->
+<!-- script end -->
     <h1> 	&#11088; &#11088; &#11088; Badges &#11088; &#11088; &#11088;</h1>
     <section>
         
@@ -216,65 +216,10 @@
                 <p><span class="name">Microsoft Cloud Adoption Framework for Azure</span><br>
                     Microsoft</p>
             </div>  
-        </div> -->
-
-        <div class="slide-badges">
-
-                <div class="slideshow-container">
-
-                <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="Images/Badges/DCC.png">
-              
-                </div>
-
-                <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="Images/Badges/DCST.png" >
-                
-                </div>
-
-                <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="Images/Badges/MCAFFA.png" >
-            
-                </div>
-
-                </div>
-                <br>
-
-                <div style="text-align:center">
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-                </div>
-
-                <script>
-                let slideIndex = 0;
-                showSlides();
-
-                function showSlides() {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("dot");
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                }
-                slideIndex++;
-                if (slideIndex > slides.length) {slideIndex = 1}    
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex-1].style.display = "block";  
-                dots[slideIndex-1].className += " active";
-                setTimeout(showSlides, 2000); // Change image every 2 seconds
-                }
-                </script>
-
         </div>
     </section>
 
-    <!-- <aside class="more_badges_container">
+    <aside class="more_badges_container">
         <div class="certificates">
             <a href="https://learn.microsoft.com/en-us/training/achievements/learn.wwl.microsoft-azure-fundamentals-describe-cloud-concepts.trophy?username=AdityaPrajapati-9385">
                 <img src="Images/Badges/MCAFFA.png" alt="certificate" width="250px" height="150px"></a>
@@ -287,11 +232,10 @@
             <p><span class="name">Microsoft Cloud Adoption Framework for Azure</span><br>
                 Microsoft</p>
         </div>
-    </aside>
-    <div class="see">
+    </aside> -->
+    <!-- <div class="see">
         <button class="btn active" onclick="showMorebadges()">See more</button>
     </div>
-     //script
      <script>
         const a = document.querySelector(".more_badges_container");
         const b = document.querySelector(".btn");
@@ -308,8 +252,8 @@
             }
         }
     </script> -->
-    <!-- //script end... -->
-    <!-- <section>
+    <!-- script end -->
+     <!-- <section>
       <div class="additional-pictures">
         <img src="Images/Badges/dainik.jpeg" alt="Gole-Medal" width="240px" height="350px">
     
