@@ -30,7 +30,7 @@
     .about .about-myself p{
         /* font-size: 1.2rem; */
         padding: 15px;
-        line-height: 2.5;
+        line-height: 1.5;
         
         /* initial-letter: 3rem; */
        /* text-wrap: wrap;
@@ -40,7 +40,7 @@
         font-size: 3rem;
         font-weight:lighter;
         float: left;
-        /* margin-right: 0.2rem; */
+        margin-right: 0.2rem;
         line-height: 1;
     }
     .about-myself .last-letter{
