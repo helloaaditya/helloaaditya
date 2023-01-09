@@ -13,25 +13,23 @@ body{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 10px;
-      background: linear-gradient(90deg ,#c4c1c55b,rgba(241, 241, 241, 0.993) 28.48% 100%);    padding: 20px 0 20px 0;
       padding: 10px;
     }
 
 .certificates {
   display: block;
-  background-color: rgba(235, 249, 252, 0.8);
-  border: 1px solid black;
+  border: 1px solid rgb(146, 8, 226);
   text-align: center;
   font-size: 15px;
   padding-top: 1rem;
   font-family: serif;
-  font-weight: bold;
-  color:rgb(235, 5, 223);
+  font-size: 18px;
+  color:rgb(3, 3, 3);
 }
 
 .name{
   font-size: 20px;
-  color: blue;
+  color: #370be6;
 }
 
 
@@ -41,9 +39,9 @@ body{
   justify-content: center;
 
 }
-.btn{
+.btn-active{
   display: block;
-  background-color: #f104b6;
+  background-color: #5E3BEE;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   font-size: 1.2rem;
@@ -57,8 +55,8 @@ h1{
   font-family: serif;
   border-style: inset;
   margin-top: 2rem;
-  color: rgb(6, 142, 184);
-  background-color: aliceblue;
+  color: #5E3BEE;
+  background-color: rgb(241, 246, 250);
 }
 /* ewkihseryw****************************************************** */
 /* ********************************************************************* */
@@ -81,14 +79,13 @@ img {vertical-align: middle;}
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.2s ease;
 }
 
 .active {
-  background-color: #5E3BEE;
+  background-color: #ffffff;
 }
 
 /* Fading animation */
