@@ -655,11 +655,11 @@ footer ul li {
     margin: 1rem 0rem 0 0;
   }
   .career h1{
-    margin: 1rem 2rem 0 3rem;
+    margin: 1rem 2rem 0 2.5rem;
     color: #a33fd1;
   }
   .career p {
-    margin: 1rem 2rem 0 3.5rem;
+    margin: 1rem 2rem 0 2.5rem;
     padding-bottom: 1rem;
     font-weight: 500;
     font-size: 19px;
@@ -775,8 +775,14 @@ footer ul li {
     color: #0e0e0e;
     list-style: disc;
   }
+  .all_skills{
+    width: 100%;
+    height: 100%;
+  }
   .skills {
     display: block;
+    width: 100%;
+    height: 100%;
   }
   .Technical-Knowledge {
     margin: 0 0 1rem 0;
@@ -799,7 +805,7 @@ footer ul li {
     color: #282938;
   }
   .Languages {
-    margin: 0 0 1rem 0;
+    margin: 0 0 2rem 0;
     width: 100%;
     height: 100%;
     border-radius: 2rem;
@@ -818,9 +824,21 @@ footer ul li {
     line-height: 30px;
     color: #282938;
   }
+  .all_skills{
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  .certificate_MAIN{
+    height:100%;
+    width:90%;
+    background: linear-gradient(90deg ,#c6c5c55b,rgba(241, 241, 241, 0.993) 28.48% 100%);    padding: 20px 0 20px 0;
+    border-radius: 2rem;
+    margin-left: 1.5rem;
+  }
   .btn3 {
     display: flex;
-    margin: 1rem 0rem 0 0;
+    margin: 0.5rem 1.5rem 0 0;
 
   }
   .Achivements h2 {
