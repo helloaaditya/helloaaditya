@@ -51,6 +51,8 @@ nav ul li {
   font-size: 25px;
   position: relative;
 }
+
+
 nav ul li a,
 nav ul li a:visited {
   display: block;
@@ -331,6 +333,7 @@ text-fill-color: transparent;
 .career p {
   margin: 1.5rem 0 0 6.2rem;
   font-size: 20px;
+  width: 90%;
   color: #282938;
 }
 .work-profile{
@@ -478,28 +481,31 @@ text-fill-color: transparent;
   list-style: disc;
 }
 
-.skills {
+.all_skills{
   display: flex;
+}
+.skills {
+  display:block;
+  width: 50%;
 }
 
 .Technical-Knowledge {
   background: linear-gradient(90deg, rgba(156, 146, 146, 0.2),#e7e7eb5b 28.48% 100%);    padding: 20px 0 20px 0;
-
-  padding: 20px 0 20px 0;
-  margin: 0 3rem;
-  width: 50%;
-  height: 100%;
+  
+  padding: 20px 20px 20px 0px;
+  margin-left: 1rem;
   border-radius: 2rem;
   box-shadow: inset 5px 5px 1px rgba(85, 80, 87, 0.25);
+  
 }
 
 .Technical-Knowledge h2 {
-  margin: 10px 0 0 100px;
+  margin: 1.5rem 0 0 5.1rem;
   color: #a33fd1;
 }
 
 .Technical-Knowledge p {
-  margin: 10px 0 0 100px;
+  margin: 1.5rem 0 0 5.1rem;
   font-weight: 500;
   font-size: 19px;
   line-height: 30px;
@@ -507,28 +513,40 @@ text-fill-color: transparent;
 }
 
 .Languages {
-  background: linear-gradient(90deg ,#c4c1c55b,rgba(241, 241, 241, 0.993) 28.48% 100%);    padding: 20px 0 20px 0;
-
+  background: linear-gradient(90deg ,#c6c5c55b,rgba(241, 241, 241, 0.993) 28.48% 100%);    padding: 20px 0 20px 0;
   padding: 20px 0 20px 0;
-  margin: 0 3rem;
-  width: 50%;
-  height: 100%;
+  margin: 2rem 1rem;
   border-radius: 2rem;
   box-shadow: 5px 5px 1px rgba(12, 12, 12, 0.25);
 }
 
 .Languages h2 {
-  margin: 10px 0 0 100px;
+  margin: 1.5rem 0 0 5.1rem;
   color: #a33fd1;
 }
 
 .Languages p {
   line-height: 200%;
-  margin: 10px 0 0 100px;
+  margin: 1.5rem 0 0 5.1rem;
   font-weight: 500;
   font-size: 19px;
   line-height: 30px;
   color: #282938;
+}
+
+.certificate_MAIN{
+  height:50%;
+  width:50%;
+  padding: 20px 0 20px 0;
+  margin: 0rem 2rem;
+  background: linear-gradient(90deg ,#c6c5c55b,rgba(241, 241, 241, 0.993) 28.48% 100%);    padding: 20px 0 20px 0;
+  margin-left: 1rem;
+  border-radius: 2rem;
+}
+.certificate_MAIN .certificate_pic img{
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
 }
 
 .btn3 {
@@ -541,7 +559,7 @@ text-fill-color: transparent;
   border-style: none;
   display: block;
   float: right;
-  margin: 1rem 3rem 2rem;
+  margin:1rem 3rem 2rem;
   cursor: pointer;
   filter: drop-shadow(6px 6px 3px rgba(110, 121, 118, 0.53));
 }
