@@ -254,7 +254,7 @@ nav ul li ul li a {
 }
 .main {
   /* background: #fff; */
-  background: linear-gradient(90deg, #c8c0c98e 28.48%, rgba(255, 255, 255, 0.74) 100%);
+  background: linear-gradient(90deg, rgba(156, 146, 146, 0.2),#e7e7eb5b 28.48% 100%);    padding: 20px 0 20px 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -332,13 +332,14 @@ text-fill-color: transparent;
 
 .career p {
   margin: 1.5rem 0 0 6.2rem;
+  line-height: 40px;
   font-size: 20px;
   width: 90%;
   color: #282938;
 }
 .work-profile{
-  border-radius: 2rem;
-  background: linear-gradient(90deg, #c8c0c98e 28.48%, rgba(255, 255, 255, 0.74) 100%);    padding: 20px 0 20px 0;
+  border-radis: 2rem;
+  background: linear-gradient(90deg, rgba(156, 146, 146, 0.2),#e7e7eb5b 28.48% 100%);    padding: 20px 0 20px 0;
 }
 .work-profile h2 {
   margin: 1.5rem 0 0 6.2rem;
@@ -359,7 +360,7 @@ text-fill-color: transparent;
   margin: 10px 0 0 150px;
   font-weight: 500;
   font-size: 19px;
-  line-height: 30px;
+  line-height: 40px;
   color: #282938;
   list-style: disc;
 }
@@ -381,7 +382,7 @@ text-fill-color: transparent;
   margin: 10px 0 0 150px;
   font-weight: 500;
   font-size: 19px;
-  line-height: 30px;
+  line-height: 40px;
   color: #282938;
   list-style: disc;
 }
@@ -398,7 +399,7 @@ text-fill-color: transparent;
 }
 
 .projects {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.74),#c8c0c98e 28.48% 100%);    padding: 20px 0 20px 0;
+  background: linear-gradient(90deg, rgba(156, 146, 146, 0.2),#e7e7eb5b 28.48% 100%);    padding: 20px 0 20px 0;
 
   width: 100%;
   display: flex;
@@ -414,17 +415,17 @@ text-fill-color: transparent;
 .projects .first h3 {
   margin: 1.5rem 0 0 5.9rem;
   color: #070707;
-  /* width: 60%; */
   height: 30px;
   border-radius: 10px;
   padding: 5px;
+  font-size: 1.3rem;
   
 }
 
 .projects p {
   margin: 1rem 0 0 6.2rem;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 30px;
   color: #282938; 
   background-color: #ffffff;
   border-radius: 10px;
@@ -452,7 +453,7 @@ text-fill-color: transparent;
 }
 
 .Academic-Profile {
-  background: linear-gradient(90deg, #c8c0c98e 28.48%, rgba(255, 255, 255, 0.74) 100%);    padding: 20px 0 20px 0;
+  background: linear-gradient(90deg, rgba(156, 146, 146, 0.2),#e7e7eb5b 28.48% 100%);    padding: 20px 0 20px 0;
   width: 100%;
   border-radius: 2rem;
   list-style: disc;
@@ -476,7 +477,7 @@ text-fill-color: transparent;
   margin: 10px 0 0 150px;
   font-weight: 500;
   font-size: 19px;
-  line-height: 30px;
+  line-height: 40px;
   color: #282938;
   list-style: disc;
 }
@@ -508,7 +509,7 @@ text-fill-color: transparent;
   margin: 1.5rem 0 0 5.1rem;
   font-weight: 500;
   font-size: 19px;
-  line-height: 30px;
+  line-height: 40px;
   color: #282938;
 }
 
@@ -530,23 +531,21 @@ text-fill-color: transparent;
   margin: 1.5rem 0 0 5.1rem;
   font-weight: 500;
   font-size: 19px;
-  line-height: 30px;
+  line-height: 33px;
   color: #282938;
 }
 
 .certificate_MAIN{
-  height:50%;
-  width:50%;
-  padding: 20px 0 20px 0;
+  display: flex;
   margin: 0rem 2rem;
-  background: linear-gradient(90deg ,#c6c5c55b,rgba(241, 241, 241, 0.993) 28.48% 100%);    padding: 20px 0 20px 0;
+  /* background: linear-gradient(90deg ,#c6c5c55b,rgba(241, 241, 241, 0.993) 28.48% 100%);    padding: 20px 0 20px 0; */
   margin-left: 1rem;
-  border-radius: 2rem;
 }
 .certificate_MAIN .certificate_pic img{
   height: 100%;
   width: 100%;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
+  
 }
 
 .btn3 {
@@ -577,12 +576,20 @@ text-fill-color: transparent;
   text-align: center;
 }
 
-.Achivements p {
+.Achivements ul li{
+  margin: 1.5rem 0 0 6.2rem;
+  font-weight: 500;
+  font-size:25px;
+  line-height: 30px;
+  color: #282938;
+  list-style: disc;
+}
+/* .Achivements p {
   margin: 1.5rem 0 0 6.2rem;
   font-size: 18px;
   line-height: 30px;
   color: #282938;
-}
+} */
 
 
 .footer {
