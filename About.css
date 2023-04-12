@@ -10,7 +10,8 @@
     }
 
     .about{
-        background: linear-gradient(90deg ,#c4c1c55b,rgba(241, 241, 241, 0.993) 28.48% 100%);    padding: 20px 0 20px 0;
+        background: linear-gradient(90deg ,#c4c1c55b,rgba(241, 241, 241, 0.993) 28.48% 100%);  
+        padding: 20px 0 20px 0;
         display: flex;
         border-radius: 2rem;
         margin: 2rem 10rem 4.5rem 10rem;
@@ -37,6 +38,10 @@
         border-radius: 2rem;
         float: right;
         margin: 2rem 0 0 5rem;
+    }
+
+    footer{
+        margin-top: 17.2rem;
     }
     
     @media screen and (max-width: 768px){
