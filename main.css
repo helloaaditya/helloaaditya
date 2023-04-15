@@ -254,8 +254,9 @@ nav ul li ul li a {
 }
 .main {
   /* background: #fff; */
-  background: linear-gradient(90deg, rgba(156, 146, 146, 0.2),#e7e7eb5b 28.48% 100%);    padding: 20px 0 20px 0;
+  /* background: linear-gradient(90deg, rgba(156, 146, 146, 0.2),#e7e7eb5b 28.48% 100%);    padding: 20px 0 20px 0; */
   width: 100%;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
 }
