@@ -153,6 +153,7 @@ body {
   .footer {
     background-color: #f0fbff;
     width: 100%;
+    margin-top: -0.5rem;
   }
   
   footer ul {
