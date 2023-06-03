@@ -262,7 +262,7 @@ nav ul li ul li a {
 }
 
 .photo img {
-  margin: 3rem 5rem 0 7rem;
+  margin: 5rem 5rem 0 7rem;
 }
 
 .main .name {
@@ -400,8 +400,7 @@ text-fill-color: transparent;
 }
 
 .projects {
-  background: linear-gradient(90deg, rgba(156, 146, 146, 0.2),#e7e7eb5b 28.48% 100%);    padding: 20px 0 20px 0;
-
+  background: linear-gradient(90deg, rgba(156, 146, 146, 0.2),#e7e7eb5b 28.48% 100%);
   width: 100%;
   display: flex;
   padding: 20px 0 20px 0;
@@ -432,9 +431,6 @@ text-fill-color: transparent;
   border-radius: 10px;
   padding: 15px;
 }
-.projects .second p {
-  padding-bottom: 43px;
-}
 
 
 .projects .second h3 {
@@ -449,7 +445,7 @@ text-fill-color: transparent;
   font-size: 17px;
   line-height: 25px;
   color: #282938;
-  margin: 3rem 0 0 5rem;
+  margin: 3.2rem 0 0 0;
 
 }
 
