@@ -624,7 +624,7 @@ footer ul li {
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: #F0FBFF;
+    background-color: #ffffff;
   }
   .photo img {
     justify-content: center;
@@ -675,11 +675,12 @@ footer ul li {
     color: #a33fd1;
   }
   .work-profile h3 {
-    margin: 1rem 2rem 0 3rem;
+    margin: 1rem 2rem 1rem 3rem;
     color: #000000;
+    font-size: 20px;
   }
   .intern ul li {
-    margin: 0  2rem 0 3rem;
+    margin: 0  2rem 1rem 3rem;
     font-weight: 500;
     font-size: 19px;
     line-height: 30px;
@@ -731,7 +732,7 @@ footer ul li {
     color: rgb(3, 3, 3);
   }
   .projects .second h3{
-    margin: 3rem 2rem 0 -2rem;
+    margin: 3rem 2rem 0 3rem;
     color: #282938;
   }
 
@@ -744,33 +745,31 @@ footer ul li {
     color: #282938;
   }
   .projects .second p {
-    margin: 1rem 2rem 0 -2rem;
+    margin: 1rem 2rem 0 3rem;
     padding-bottom: 1rem;
     font-weight: 500;
     font-size: 19px;
     line-height: 30px;
     color: #282938;
   }
-  /* .badge {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;  
-    
-  } */
+ 
+
   .back .btn6{
     margin: 0rem 14.5rem 0rem 0rem;
   }
+  
   .Academic-Profile h2 {
-    margin: 1rem 2rem 0 3rem;
+    margin: 1rem;
     color: #a33fd1;
     padding-top: 1rem;
   }
   .Academic-Profile h3 {
-    margin: 1rem 0rem 0rem 2.6rem;
+    margin: 1rem 0rem 0rem 2rem;
     /* width: 100%; */
     color: #000000;
   }
+
+
 #edu ul li {
     margin: 0  2rem 0 3rem;
     font-weight: 500;
@@ -850,8 +849,12 @@ footer ul li {
     display: flex;
     /* margin: 4rem 5rem 0 4.5rem; */
   }
-  .Achivements p {
-    margin: 1rem 2rem 0 3rem;
+
+  .Achivements{
+    line-height: 30px;
+    color: #282938;
+    padding: 2rem;
+    margin: 0 0 0 -3rem;
   }
   
 }
